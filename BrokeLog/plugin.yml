@@ -1,0 +1,26 @@
+name: BrokeLog
+version: 1.1.0
+main: com.candraw.BrokeLog.BrokeLog
+commands:
+    brokeLog:
+        description: View brokeLog help
+        permission: BrokeLog.help
+        usage: /<command>
+    wholeList:
+        description: See all recorded BlockEvents in a specific world.
+        aliases: wList
+        permission: BrokeLog.seeWholeList
+        usage: /<command> <world>
+    timeList:
+        description: See all BlockEvents in a world that happened after a specific time.
+        aliases: tList
+        permission: BrokeLog.seeTimeList
+        usage: /<command> [world] <hour> <minute> <day> <month> <year>
+    checkBlock:
+        description: Toggle CheckBlock-Mode to see who placed this block.
+        permission: BrokeLog.checkBlockMode
+        usage: /<command>
+    blockRoll:
+        description: Rollback actions of a player to a specific time.
+        permission: BrokeLog.rollBack
+        usage: /<command> <player> [world] <hour> <minute> <day> <month> <year>
